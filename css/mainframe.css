@@ -1,0 +1,29 @@
+.counters {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-frame {
+  border: 1px solid black;
+  height: 500px;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.spaceship-view {
+  border: 1px solid blue;
+  height: 100px;
+  width: 700px;
+}
+
+.alert-view {
+  border: 1px solid purple;
+  height: 75px;
+  width: 700px;
+}
+
+.control-grid {
+  border: 1px solid red;
+  height: 320px;
+  width: 700px;
+}
