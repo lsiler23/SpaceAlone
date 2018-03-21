@@ -1,4 +1,4 @@
-.hyperspeed-button {
+#hyperspeed {
   width: 80px;
   height: 98px;
   font-size: 8px;
@@ -6,10 +6,11 @@
   background-color: #a7a7a7;
 }
 
-.hyperspeed {
+.hyperspeed-button {
   background-color: #c10000;
   color: white;
-  font-size: 10px;
-  width: 55px;
+  font-size: 8px;
+  width: 64px;
+  padding: 5px;
   margin: 13px 20px 0 10px;
 }
