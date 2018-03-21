@@ -1,3 +1,6 @@
+body {
+  font-family: 'Press Start 2P', cursive;
+}
 .counters {
   display: flex;
   justify-content: space-between;
@@ -15,11 +18,17 @@
   height: 100px;
   width: 700px;
 }
-
 .alert-view {
-  border: 1px solid purple;
   height: 75px;
   width: 700px;
+  border: 1px solid purple;
+}
+
+#alert-view-text {
+  text-align: center;
+  padding: 30px;
+  background-color: black;
+  color: white;
 }
 
 .control-grid {

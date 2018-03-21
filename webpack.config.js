@@ -1,7 +1,7 @@
 module.exports = {
-  entry: "./js/space_alone.js",
+  entry: "./lib/space_alone.js",
   output: {
-  	filename: "./js/bundle.js"
+  	filename: "./lib/bundle.js"
   },
   devtool: 'source-map',
 };
