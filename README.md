@@ -69,13 +69,13 @@ You'll have 60 seconds to complete 60 crucial tasks based on your control board 
   * Build game entry point
     - Render button and toggle
   * Build game class
-   - Connect the directional to the result of the event listener on the button
-   - Create correct moves counter
+    - Connect the directional to the result of the event listener on the button
+    - Create correct moves counter
  * Update main frame
-   - Header:
-     - Render correct moves counter
-     - Render timer
-     - Ensure a correct move results in a count up
+    - Header:
+      - Render correct moves counter
+      - Render timer
+      - Ensure a correct move results in a count up
 
 ### Phase II
 #### Friday, March 23 EOD
@@ -85,8 +85,8 @@ You'll have 60 seconds to complete 60 crucial tasks based on your control board 
       - At 10 seconds, should be 10 points on the moves counter, etc.
       - Red flash display if behind
   * Build a slider control
-   - Initialize with name, language, and options
-   - Create functionality module for a drag event listener that updates class
+    - Initialize with name, language, and options
+    - Create functionality module for a drag event listener that updates class
 
 #### Saturday, March 24 EOD
   * Populate board with one button and one slide
