@@ -7,22 +7,37 @@ body {
   background-image: url('http://sci.esa.int/science-e-media/img/7e/heic0607a.jpg');
 }
 
-.counters {
+.all-content {
   display: flex;
-  justify-content: space-between;
+}
+
+h1 {
+  margin-left: 20px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.counters {
+  display: list-item;
+}
+
+.counter {
+  padding: 10px;
+  border: 1px solid white;
+  background-color: #474d65;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  margin-top: 51px;
 }
 
 .main-frame {
   border: 1px solid black;
   height: 500px;
   width: 700px;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
-.spaceship-view {
+#spaceship-canvas {
   border: 1px solid blue;
-  height: 100px;
-  width: 700px;
   background-color: lightgrey;
 }
 .alert-view {
@@ -35,4 +50,8 @@ body {
   padding: 30px;
   text-align: center;
   color: white;
+}
+
+.losing {
+  background-color: #ff4c4c!important;
 }
