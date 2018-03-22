@@ -1,9 +1,18 @@
+.control-grid {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid red;
+  height: 320px;
+  width: 700px;
+}
+
 #hyperspeed {
   width: 80px;
   height: 98px;
   font-size: 8px;
   padding: 5px;
   background-color: #a7a7a7;
+  border: 1px solid black;
 }
 
 .hyperspeed-button {
@@ -13,4 +22,27 @@
   width: 64px;
   padding: 5px;
   margin: 13px 20px 0 10px;
+}
+
+#percolator {
+  width: 89px;
+  height: 61px;
+  font-size: 8px;
+  padding: 8px;
+  background-color: #a7a7a7;
+  border: 1px solid black;
+  border-left: 0;
+}
+
+#percolator span {
+  padding: 2px;
+  font-size: 9px;
+}
+
+#on {
+  padding: 11px;
+  margin-left: 20px;
+  margin-top: 11px;
+  background-color: #c10000;
+  color: white;
 }

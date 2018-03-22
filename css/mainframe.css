@@ -1,5 +1,10 @@
 * {
   font-family: 'Press Start 2P', cursive;
+  color: white;
+}
+
+body {
+  background-image: url('http://sci.esa.int/science-e-media/img/7e/heic0607a.jpg');
 }
 
 .counters {
@@ -18,6 +23,7 @@
   border: 1px solid blue;
   height: 100px;
   width: 700px;
+  background-color: lightgrey;
 }
 .alert-view {
   height: 75px;
@@ -29,10 +35,4 @@
   padding: 30px;
   text-align: center;
   color: white;
-}
-
-.control-grid {
-  border: 1px solid red;
-  height: 320px;
-  width: 700px;
 }
