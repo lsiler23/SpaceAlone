@@ -6,7 +6,7 @@
   width: 700px;
 }
 
-#hyperspeed {
+#hyperspeed-div {
   width: 80px;
   height: 98px;
   font-size: 8px;
@@ -24,7 +24,7 @@
   margin: 13px 20px 0 10px;
 }
 
-#percolator {
+#percolator-div {
   width: 89px;
   height: 61px;
   font-size: 8px;
@@ -34,15 +34,19 @@
   border-left: 0;
 }
 
-#percolator span {
+#percolator-div span {
   padding: 2px;
   font-size: 9px;
 }
 
-.perc-on {
+#percolator {
   padding: 11px;
   margin-left: 20px;
   margin-top: 11px;
   background-color: #c10000;
   color: white;
+}
+
+.on {
+  background-color: #5a2317!important;
 }
