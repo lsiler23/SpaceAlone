@@ -6,13 +6,16 @@
   width: 700px;
 }
 
-#hyperspeed-div {
+.control {
+  background-color: #a7a7a7;
+  border: 1px solid black;
+}
+
+.hyperspeed-div {
   width: 80px;
   height: 98px;
   font-size: 8px;
   padding: 5px;
-  background-color: #a7a7a7;
-  border: 1px solid black;
 }
 
 .hyperspeed-button {
@@ -24,17 +27,15 @@
   margin: 13px 20px 0 10px;
 }
 
-#percolator-div {
+.percolator-div {
   width: 89px;
   height: 61px;
   font-size: 8px;
   padding: 8px;
-  background-color: #a7a7a7;
-  border: 1px solid black;
   border-left: 0;
 }
 
-#percolator-div span {
+.percolator-div span {
   padding: 2px;
   font-size: 9px;
 }
@@ -49,4 +50,57 @@
 
 .on {
   background-color: #5a2317!important;
+}
+
+.kazoomosphere-div {
+  font-size: 9px;
+  width: 146px;
+  height: 64px;
+  padding: 5px;
+  padding-top: 8px;
+  border-left: 0;
+}
+
+.kazoomosphere-div span {
+  margin-left: 12px;
+}
+
+#kazoomosphere {
+  margin-top: 1px;
+  margin-left: 7px;
+  border-radius: 5px;
+  -webkit-appearance: none;
+}
+
+
+.num-options {
+  list-style: none;
+  display: flex;
+  padding: 0px;
+  justify-content: space-around;
+  margin-top: 13px;
+  margin-left: -15px;
+  margin-right: -10px;
+}
+
+.num-options li {
+  color: black;
+}
+
+.kazoom-slider::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 7px;
+  background: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.kazoom-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid white;
+  height: 15px;
+  width: 15px;
+  margin-top: -5px;
+  border-radius: 50%;
+  background-color: #c10000;
 }

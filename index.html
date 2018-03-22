@@ -12,34 +12,33 @@
       <h1>SpaceAlone</h1>
       <div class='header'>
         <div class='counters'>
-          <div id='moves'>
-
-          </div>
-          <div id='timer'>
-
-          </div>
+          <div id='moves'></div>
+          <div id='timer'></div>
         </div>
       </div>
       <div class='main-frame'>
-        <div class='spaceship-view'>
-
-        </div>
+        <div class='spaceship-view'></div>
         <div class='alert-view'>
-          <div id='alert-view-text'>
-
-          </div>
+          <div id='alert-view-text'></div>
         </div>
         <div class='control-grid'>
-          <div id='hyperspeed-div' class='control-div'>
+          <div class='control hyperspeed-div'>
             <span>Hyperspeed</span>
             <button id='reallyfast' class='hyperspeed-button'>REALLY FAST</button>
             <button id='lessfast' class='hyperspeed-button'>LESS FAST</button>
           </div>
-          <div id='percolator-div'>
+          <div class='control percolator-div'>
             <span>Percolator</span>
-            <button
-            id='percolator'
-            class='off'>ON</button>
+            <button id='percolator' class='off'>ON</button>
+          </div>
+          <div class='control kazoomosphere-div'>
+            <span>Kazoomosphere</span>
+            <ul class='num-options'>
+              <li class='kazoom-1'>1</li>
+              <li class='kazoom-2'>2</li>
+              <li class='kazoom-3'>3</li>
+            </ul>
+            <input type='range' min='1' max='100' value='1' id='kazoomosphere' class='kazoom-slider'>
           </div>
         </div>
       </div>
