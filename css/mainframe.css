@@ -22,13 +22,12 @@
 .alert-view {
   height: 75px;
   width: 700px;
-  border: 1px solid purple;
+  background-color: black;
 }
 
 #alert-view-text {
-  text-align: center;
   padding: 30px;
-  background-color: black;
+  text-align: center;
   color: white;
 }
 
