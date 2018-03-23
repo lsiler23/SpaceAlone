@@ -21,7 +21,7 @@
   margin-top: -59px;
 }
 
-.dial {
+#dial {
   height: 121px;
   -webkit-user-drag: none;
 }
@@ -34,12 +34,20 @@
   margin-left: 7px;
 }
 
+.opt-one {
+  transform: rotate(-45deg);
+}
+
 .two {
   width: 10px;
   font-size: 11px;
   color: black;
   margin-top: 42px;
   margin-left: -12px;
+}
+
+.opt-two {
+  transform: rotate(-2deg);
 }
 
 .three {
@@ -51,6 +59,10 @@
   margin-right: 5px;
 }
 
+.opt-three {
+  transform: rotate(40deg);
+}
+
 .four {
   width: 10px;
   font-size: 11px;
@@ -60,6 +72,10 @@
   margin-right: -20px;
 }
 
+.opt-four {
+  transform: rotate(83deg);
+}
+
 .five {
   width: 10px;
   font-size: 11px;
@@ -67,4 +83,8 @@
   margin-top: 96px;
   margin-left: 6px;
   margin-right: 10px;
+}
+
+.opt-five {
+  transform: rotate(121deg);
 }
