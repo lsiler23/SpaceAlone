@@ -1,6 +1,7 @@
 * {
   font-family: 'Press Start 2P', cursive;
   color: white;
+  user-select: none;
 }
 
 body {
