@@ -1,16 +1,4 @@
-.control-grid {
-  display: flex;
-  flex-wrap: wrap;
-  border: 1px solid red;
-  height: 320px;
-  width: 700px;
-}
-
-.control {
-  background-color: #a7a7a7;
-  border: 1px solid black;
-}
-
+/* hyperspeed */
 .hyperspeed-div {
   width: 80px;
   height: 98px;
@@ -26,7 +14,7 @@
   padding: 5px;
   margin: 13px 20px 0 10px;
 }
-
+/* percolator */
 .percolator-div {
   width: 89px;
   height: 92px;
@@ -53,64 +41,13 @@
 .on {
   background-color: #5a2317!important;
 }
-
-.kazoomosphere-div {
-  font-size: 9px;
-  width: 146px;
-  height: 64px;
-  padding: 5px;
-  padding-top: 8px;
-  border-left: 0;
-}
-
-.kazoomosphere-div span {
-  margin-left: 12px;
-}
-
-#kazoomosphere {
-  margin-top: 1px;
-  margin-left: 7px;
-  border-radius: 5px;
-  -webkit-appearance: none;
-}
-
-.kazoom-slider::-webkit-slider-runnable-track {
-  width: 300px;
-  height: 7px;
-  background: #f9fbff;
-  border: none;
-  border-radius: 5px;
-}
-
-.kazoom-slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border: 1px solid white;
-  height: 15px;
-  width: 15px;
-  margin-top: -5px;
-  border-radius: 50%;
-  background-color: #c10000;
-}
-
-.num-options {
-  list-style: none;
-  display: flex;
-  padding: 0px;
-  justify-content: space-around;
-  margin-top: 13px;
-  margin-left: -15px;
-  margin-right: -10px;
-}
-
-.num-options li {
-  color: black;
-}
-
+/* find */
 .find-div {
   width: 86px;
   height: 132px;
   font-size: 8px;
   padding: 9px;
+  border-bottom: 0;
 }
 
 .find-div span {
@@ -127,61 +64,7 @@
   padding: 4px;
   margin: 13px 20px 0 10px;
 }
-
-#stress {
-  border-radius: 5px;
-  transform: rotate(90deg);
-  -webkit-appearance: none;
-  margin-top: 79px;
-  margin-bottom: 135px;
-  margin-left: -45px;
-  margin-top: 81px;
-}
-
-.stress-slider::-webkit-slider-runnable-track {
-  box-sizing: border-box;
-  width: 400px;
-  height: 7px;
-  background: #f9fbff;
-  top: 0;
-  border: none;
-  border-radius: 5px;
-}
-
-.stress-slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border: 1px solid white;
-  height: 15px;
-  width: 15px;
-  margin-top: -5px;
-  border-radius: 50%;
-  background-color: #c10000!important;
-}
-
-.stress-div {
-  font-size: 9px;
-  width: 61px;
-  height: 162px;
-  padding: 8px;
-}
-
-.stuff {
-  display: flex;
-}
-
-.num-options-stress {
-  font-size: 10px;
-  display: list-item;
-  list-style: none;
-  padding: 0px;
-  margin-left: 10px;
-}
-
-.stressli {
-  margin-top: 13px;
-  color: black;
-}
-
+/* oven */
 #oven {
   padding: 4px;
   font-size: 9px;
@@ -206,34 +89,68 @@
   margin-left: 52px;
   width: auto;
 }
-
+/* dial */
 .dial-div {
   width: 196px;
   margin-top: -70px;
   height: 209px;
   border-top: 0;
 }
-
+/* gorgonzola */
 .gorgonzola-div {
-  width: 91px;
-  height: 132px;
+  width: 138px;
+  height: 222px;
   font-size: 8px;
   padding: 9px;
-  margin-top: -102px;
+  margin-top: -103px;
   margin-left: -1px;
   border-right: 0;
 }
 
 .gorgonzola-div span {
   font-size: 9px;
+  margin-left: 26px;
 }
 
 .gorgonzola-button {
   background-color: #c10000;
   color: white;
   font-size: 8px;
-  width: 64px;
+  width: 112px;
   height: 27px;
   padding: 4px;
   margin: 13px 20px 0 10px;
+}
+
+.letme-div {
+  width: 92px;
+  margin-top: -29px;
+  margin-left: 0px;
+  height: 51px;
+  padding: 6px;
+}
+
+.letme-div span {
+  font-size: 10px;
+  margin-left: 14px;
+  width: auto;
+}
+
+#letme {
+  padding: 4px;
+  font-size: 9px;
+  margin-left: 5px;
+  margin-top: 6px;
+  width: 81px;
+  height: 27px;
+  background-color: #c10000;
+  color: white;
+}
+
+.later-div {
+  width: 104px;
+  height: 102px;
+  margin-top: 36px;
+  margin-left: -106px;
+  border-top: 0;
 }

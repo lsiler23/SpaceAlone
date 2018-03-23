@@ -56,3 +56,16 @@ h1 {
 .losing {
   background-color: #ff4c4c!important;
 }
+
+.control-grid {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid red;
+  height: 320px;
+  width: 700px;
+}
+
+.control {
+  background-color: #a7a7a7;
+  border: 1px solid black;
+}

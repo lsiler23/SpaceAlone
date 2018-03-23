@@ -5,6 +5,7 @@
     <title>SpaceAlone</title>
      <link rel='stylesheet' href='./css/mainframe.css' >
      <link rel='stylesheet' href='./css/buttons_css.css' >
+     <link rel="stylesheet" href="./css/slider_css.css">
      <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
   </head>
   <body>
@@ -40,7 +41,7 @@
               <li class='kazoom-2'>2</li>
               <li class='kazoom-3'>3</li>
             </ul>
-            <input type='range' min='1' max='100' value='1' id='kazoomosphere' class='kazoom-slider'>
+            <input type='range' min='0' max='100' step='50' value='1' id='kazoomosphere' class='kazoom-slider'>
           </div>
           <div class='control find-div'>
             <span>Find</span>
@@ -63,7 +64,7 @@
                 <li class='stressli'>5</li>
                 <li class='stressli'>6</li>
               </ul>
-              <input type='range' min='1' max='100' value='1' id='stress' class='stress-slider'>
+              <input type='range' min='0' max='100' value='1' id='stress' class='stress-slider'>
             </div>
           </div>
           <div class='control dial-div'>
@@ -71,11 +72,18 @@
           </div>
           <div class='control gorgonzola-div'>
             <span>Gorgonzola</span>
-            <button id='mouth' class='gorgonzola-button'>MOUTH</button>
-            <button id='salad' class='gorgonzola-button'>SALAD</button>
-            <button id='trash' class='gorgonzola-button'>TRASH</button>
-            <button id='fridge' class='gorgonzola-button'>FRIDGE</button>
-            <button id='shoppingbasket' class='gorgonzola-button'>SHOPPING BASKET</button>
+            <button id='yourmouth' class='gorgonzola-button'>MOUTH</button>
+            <button id='thatsalad' class='gorgonzola-button'>SALAD</button>
+            <button id='thetrash' class='gorgonzola-button'>TRASH</button>
+            <button id='thefridge' class='gorgonzola-button'>FRIDGE</button>
+            <button id='theshoppingbasket' class='gorgonzola-button'>SHOPPING BASKET</button>
+          </div>
+          <div class='control letme-div'>
+            <span>Let me</span>
+            <button id='letme' class='off'>IN</button>
+          </div>
+          <div class='control later-div'>
+
           </div>
         </div>
       </div>
