@@ -18,6 +18,7 @@ h1 {
 
 .counters {
   display: list-item;
+  text-align: center;
 }
 
 .counter {

@@ -29,7 +29,7 @@
 
 .percolator-div {
   width: 89px;
-  height: 61px;
+  height: 92px;
   font-size: 8px;
   padding: 8px;
   border-left: 0;
@@ -42,8 +42,10 @@
 
 #percolator {
   padding: 11px;
-  margin-left: 20px;
-  margin-top: 11px;
+  margin-left: 13px;
+  margin-top: 15px;
+  width: 62px;
+  height: 54px;
   background-color: #c10000;
   color: white;
 }
@@ -102,4 +104,136 @@
 
 .num-options li {
   color: black;
+}
+
+.find-div {
+  width: 86px;
+  height: 132px;
+  font-size: 8px;
+  padding: 9px;
+}
+
+.find-div span {
+  font-size: 9px;
+  margin-left: 24px;
+}
+
+.find-button {
+  background-color: #c10000;
+  color: white;
+  font-size: 8px;
+  width: 64px;
+  height: 27px;
+  padding: 4px;
+  margin: 13px 20px 0 10px;
+}
+
+#stress {
+  border-radius: 5px;
+  transform: rotate(90deg);
+  -webkit-appearance: none;
+  margin-top: 79px;
+  margin-bottom: 135px;
+  margin-left: -45px;
+  margin-top: 81px;
+}
+
+.stress-slider::-webkit-slider-runnable-track {
+  box-sizing: border-box;
+  width: 400px;
+  height: 7px;
+  background: #f9fbff;
+  top: 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.stress-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid white;
+  height: 15px;
+  width: 15px;
+  margin-top: -5px;
+  border-radius: 50%;
+  background-color: #c10000!important;
+}
+
+.stress-div {
+  font-size: 9px;
+  width: 61px;
+  height: 162px;
+  padding: 8px;
+}
+
+.stuff {
+  display: flex;
+}
+
+.num-options-stress {
+  font-size: 10px;
+  display: list-item;
+  list-style: none;
+  padding: 0px;
+  margin-left: 10px;
+}
+
+.stressli {
+  margin-top: 13px;
+  color: black;
+}
+
+#oven {
+  padding: 4px;
+  font-size: 9px;
+  margin-left: 26px;
+  margin-top: 6px;
+  width: 100px;
+  height: 27px;
+  background-color: #c10000;
+  color: white;
+}
+
+.oven-div {
+  width: 148px;
+  height: 51px;
+  padding: 6px;
+  border-left: 0;
+  border-right: 0;
+}
+
+.oven-div span {
+  font-size: 11px;
+  margin-left: 52px;
+  width: auto;
+}
+
+.dial-div {
+  width: 196px;
+  margin-top: -70px;
+  height: 209px;
+  border-top: 0;
+}
+
+.gorgonzola-div {
+  width: 91px;
+  height: 132px;
+  font-size: 8px;
+  padding: 9px;
+  margin-top: -102px;
+  margin-left: -1px;
+  border-right: 0;
+}
+
+.gorgonzola-div span {
+  font-size: 9px;
+}
+
+.gorgonzola-button {
+  background-color: #c10000;
+  color: white;
+  font-size: 8px;
+  width: 64px;
+  height: 27px;
+  padding: 4px;
+  margin: 13px 20px 0 10px;
 }
