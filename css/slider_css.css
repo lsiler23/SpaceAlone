@@ -83,8 +83,8 @@
 
 .stress-div {
   font-size: 9px;
-  width: 61px;
-  height: 162px;
+  width: 62px;
+  height: 198px;
   padding: 8px;
 }
 
@@ -103,4 +103,65 @@
 .stressli {
   margin-top: 13px;
   color: black;
+}
+
+.cosmicslop-div {
+  font-size: 9px;
+  padding: 5px;
+  padding-top: 8px;
+  width: 334px;
+  height: 90px;
+  margin-top: -1px;
+  border-top: 0;
+  margin-left: -106px;
+}
+
+.cosmicslop-div span {
+  margin-left: 12px;
+}
+
+.num-options-cosmic {
+  list-style: none;
+  display: flex;
+  margin-left: -45px;
+  margin-top: 18px;
+}
+
+.num-options-cosmic li {
+  color: black;
+  text-align: center;
+}
+
+.cosmic-1 {
+  margin-left: 16px;
+}
+
+.cosmic-2 {
+  margin-left: 24px;
+}
+
+#cosmicslop {
+  margin-top: 5px;
+  margin-left: 18px;
+  width: 300px;
+  border-radius: 5px;
+  -webkit-appearance: none;
+}
+
+.cosmicslop-slider::-webkit-slider-runnable-track {
+  width: 500px;
+  height: 7px;
+  background: #f9fbff;
+  border: none;
+  border-radius: 5px;
+}
+
+.cosmicslop-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid white;
+  height: 15px;
+  width: 15px;
+  margin-top: -5px;
+  border-radius: 50%;
+  background-color: #c10000;
 }

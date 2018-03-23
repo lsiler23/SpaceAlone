@@ -92,7 +92,7 @@
 /* dial */
 .dial-div {
   width: 196px;
-  margin-top: -70px;
+  margin-top: -107px;
   height: 209px;
   border-top: 0;
 }
@@ -102,7 +102,7 @@
   height: 222px;
   font-size: 8px;
   padding: 9px;
-  margin-top: -103px;
+  margin-top: -139px;
   margin-left: -1px;
   border-right: 0;
 }
@@ -124,7 +124,7 @@
 
 .letme-div {
   width: 92px;
-  margin-top: -29px;
+  margin-top: -66px;
   margin-left: 0px;
   height: 51px;
   padding: 6px;
@@ -145,12 +145,4 @@
   height: 27px;
   background-color: #c10000;
   color: white;
-}
-
-.later-div {
-  width: 104px;
-  height: 102px;
-  margin-top: 36px;
-  margin-left: -106px;
-  border-top: 0;
 }
