@@ -146,3 +146,32 @@
   background-color: #c10000;
   color: white;
 }
+
+.zaboom-div {
+  width: 160px;
+  height: 150px;
+  margin-top: -152px;
+  margin-left: -240px;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid black;
+}
+.zaboom-div span {
+  margin-left: 5px;
+  font-size: 9px;
+}
+
+.button-holder {
+  margin-left: 9px;
+  margin-top: 17px;
+}
+
+.zaboom-button {
+  background-color: #c10000;
+  color: white;
+  font-size: 8px;
+  width: 31px;
+  height: 27px;
+  margin: 3px;
+}
