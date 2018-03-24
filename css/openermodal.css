@@ -1,0 +1,22 @@
+.entry-text {
+  margin: 97px auto;
+  text-align: center;
+  width: 800px;
+  height: auto;
+  background: #474d65;
+  padding: 10px;
+  border: 5px solid #a7a7a7;
+}
+
+.opener-modal p {
+  padding: 10px;
+  line-height: 1.5;
+}
+
+.game-start {
+  margin: 0 auto;
+  color: #474d65;
+  background: #fff;
+  padding: 10px;
+  width: 400px;
+}

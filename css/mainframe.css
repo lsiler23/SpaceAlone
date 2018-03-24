@@ -8,7 +8,7 @@ body {
   background-image: url('http://sci.esa.int/science-e-media/img/7e/heic0607a.jpg');
 }
 
-.all-content {
+#all-content {
   display: flex;
 }
 
@@ -63,4 +63,8 @@ h1 {
 .control {
   background-color: #a7a7a7;
   border: 1px solid black;
+}
+
+.closed {
+  display: none!important;
 }
