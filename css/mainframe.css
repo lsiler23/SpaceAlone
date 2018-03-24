@@ -32,16 +32,11 @@ h1 {
 }
 
 .main-frame {
-  border: 1px solid black;
   height: 500px;
   width: 700px;
   margin: 50px auto;
 }
 
-#spaceship-canvas {
-  border: 1px solid blue;
-  background-color: lightgrey;
-}
 .alert-view {
   height: 75px;
   width: 700px;
@@ -61,7 +56,6 @@ h1 {
 .control-grid {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid red;
   height: 320px;
   width: 700px;
 }
