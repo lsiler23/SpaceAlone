@@ -12,18 +12,28 @@
      <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
   </head>
   <body>
-    <div class='opener-modal'>
+    <div id='entry-screens' class='opener-modal'>
       <h1>SpaceAlone</h1>
-      <div class='entry-text'>
+      <div id='entry-text' class='entry-text open'>
         <p>You've been lost and alone in space for months. Suddenly, your ship goes into self-protect mode.</p>
         <p>
           Maybe you were hit by something - or maybe you're running low on fuel. There's no time to investigate now - you'll just have to follow the alerts displayed by your self-protect screen.
         </p>
-        <p>If you can complete the 20 tasks demanded by your ship, you should be okay. Otherwise, well...happy floating!</p>
-        <div class='game-start'>
-          Click here to start
-        </div>
+        <div class='arrow'>➣</div>
       </div>
+        <div id='level-choice'class='entry-text closed'>
+          <p>If you can complete the tasks demanded by your ship, you should be okay. Otherwise, well...happy floating!</p>
+          <p>Choose your difficulty level: </p>
+          <div class='levels'>
+            <div id='level1' class='level'>Level 1: 10 tasks</div>
+            <div id='level2' class='level'>Level 2: 20 tasks</div>
+            <div id='level3' class='level'>Level 3: 30 tasks</div>
+            <div id='level4' class='level'>Evil: 50 tasks</div>
+          </div>
+          <div class='game-start'>
+            Click here to start
+          </div>
+        </div>
     </div>
     <div id='all-content' class='closed'>
       <div class='side-bar'>
@@ -32,6 +42,7 @@
           <div class='counters'>
             <div id='moves' class='counter fine'></div>
             <div id='timer' class='counter fine'></div>
+            <div id='try-again' class='counter closed'>Play again?</div>
           </div>
         </div>
       </div>

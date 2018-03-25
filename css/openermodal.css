@@ -1,5 +1,5 @@
 .entry-text {
-  margin: 97px auto;
+  margin: 54px auto;
   text-align: center;
   width: 800px;
   height: auto;
@@ -19,4 +19,24 @@
   background: #fff;
   padding: 10px;
   width: 400px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.arrow {
+  text-align: right;
+  padding: 10px;
+  font-size: 48px;
+  cursor: pointer;
+}
+
+.level {
+  border: 3px solid white;
+  padding: 5px;
+  margin: 22px;
+}
+
+.chosen {
+  background-color: #fff;
+  color: #474d65;
 }
