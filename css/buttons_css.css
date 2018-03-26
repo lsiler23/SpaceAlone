@@ -1,3 +1,6 @@
+button {
+  cursor: pointer;
+}
 /* hyperspeed */
 .hyperspeed-div {
   width: 80px;

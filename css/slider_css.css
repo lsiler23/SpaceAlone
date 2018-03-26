@@ -35,6 +35,7 @@
   margin-top: -5px;
   border-radius: 50%;
   background-color: #c10000;
+  cursor: pointer;
 }
 
 .num-options {
@@ -79,6 +80,7 @@
   margin-top: -5px;
   border-radius: 50%;
   background-color: #c10000!important;
+  cursor: pointer;
 }
 
 .stress-div {
@@ -164,4 +166,5 @@
   margin-top: -5px;
   border-radius: 50%;
   background-color: #c10000;
+  cursor: pointer;
 }

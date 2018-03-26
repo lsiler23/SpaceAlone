@@ -86,6 +86,7 @@ h1 {
   display: flex;
   padding: 18px;
   justify-content: space-evenly;
+  cursor: pointer;
 }
 
 #try-again {
