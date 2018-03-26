@@ -42,6 +42,7 @@
 
 .opt-one {
   transform: rotate(-45deg);
+  transition: 0.4s;
 }
 
 .two {
@@ -57,6 +58,7 @@
 
 .opt-two {
   transform: rotate(-2deg);
+  transition: 0.4s;
 }
 
 .three {
@@ -74,6 +76,7 @@
 
 .opt-three {
   transform: rotate(40deg);
+  transition: 0.4s;
 }
 
 .four {
@@ -90,6 +93,7 @@
 
 .opt-four {
   transform: rotate(83deg);
+  transition: 0.4s;
 }
 
 .five {
@@ -106,4 +110,5 @@
 
 .opt-five {
   transform: rotate(121deg);
+  transition: 0.4s;
 }
