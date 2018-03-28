@@ -1,4 +1,19 @@
 #spaceship-canvas {
-  background-image: url('../assets/canvasbackground.png');
+  background-image: url('../assets/giphy-1.gif');
+  background-size: cover;
   border: 5px solid #a7a7a7;
+  display: flex;
+}
+
+.spaceship-icon {
+  width: 80px;
+  transform: rotate(43deg);
+  margin-left: 282px;
+}
+
+.spaceship-fire {
+  width: 40px;
+  margin-left: -106px;
+  margin-top: 24px;
+  transform: rotate(45deg);
 }
