@@ -47,7 +47,7 @@ button {
 }
 
 .on {
-  background-color: #5a2317;
+  background-color: #5a2317!important;
 }
 /* find */
 .find-div {
