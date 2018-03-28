@@ -9,6 +9,7 @@
 }
 
 .kazoomosphere-div span {
+  text-shadow: 1px 1px black;
   margin-left: 12px;
 }
 
@@ -90,6 +91,10 @@
   padding: 8px;
 }
 
+.stress-div span {
+  text-shadow: 1px 1px black;
+}
+
 .stuff {
   display: flex;
 }
@@ -119,6 +124,7 @@
 }
 
 .cosmicslop-div span {
+  text-shadow: 1px 1px black;
   margin-left: 108px;
 }
 

@@ -17,6 +17,10 @@ button {
   padding: 5px;
   margin: 13px 20px 0 10px;
 }
+
+.hyperspeed-div span {
+  text-shadow: 1px 1px black;
+}
 /* percolator */
 .percolator-div {
   width: 89px;
@@ -27,6 +31,7 @@ button {
 }
 
 .percolator-div span {
+  text-shadow: 1px 1px black;
   padding: 2px;
   font-size: 9px;
 }
@@ -42,7 +47,7 @@ button {
 }
 
 .on {
-  background-color: #5a2317!important;
+  background-color: #5a2317;
 }
 /* find */
 .find-div {
@@ -54,6 +59,7 @@ button {
 }
 
 .find-div span {
+  text-shadow: 1px 1px black;
   font-size: 9px;
   margin-left: 24px;
 }
@@ -88,6 +94,7 @@ button {
 }
 
 .oven-div span {
+  text-shadow: 1px 1px black;
   font-size: 11px;
   margin-left: 52px;
   width: auto;
@@ -105,6 +112,7 @@ button {
 }
 
 .gorgonzola-div span {
+  text-shadow: 1px 1px black;
   font-size: 9px;
   margin-left: 26px;
 }
@@ -128,6 +136,7 @@ button {
 }
 
 .letme-div span {
+  text-shadow: 1px 1px black;
   font-size: 10px;
   margin-left: 14px;
   width: auto;
@@ -155,6 +164,7 @@ button {
   border-bottom: 1px solid black;
 }
 .zaboom-div span {
+  text-shadow: 1px 1px black;
   margin-left: 5px;
   font-size: 9px;
 }
