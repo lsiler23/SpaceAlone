@@ -6,6 +6,8 @@
 
 body {
   background-image: url('http://sci.esa.int/science-e-media/img/7e/heic0607a.jpg');
+  height: 100%;
+  overflow-y: hidden;
 }
 
 #all-content {
@@ -20,6 +22,7 @@ h1 {
 .counters {
   display: list-item;
   text-align: center;
+  margin-top: 28%;
 }
 
 .counter {
@@ -28,13 +31,12 @@ h1 {
   background-color: #474d65;
   margin-left: 50px;
   margin-bottom: 50px;
-  margin-top: 51px;
 }
 
 .main-frame {
   height: 500px;
   width: 700px;
-  margin: 50px auto;
+  margin: 11% auto;
 }
 
 .alert-view {
@@ -75,7 +77,7 @@ h1 {
   padding: 10px;
   width: 285px;
   left: 63px;
-  top: 500px;
+  top: calc(100% - 238px);
   font-size: 10px;
   position: absolute;
   text-align: center;
