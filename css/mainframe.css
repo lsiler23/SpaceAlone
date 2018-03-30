@@ -94,3 +94,9 @@ h1 {
 #try-again {
   cursor: pointer;
 }
+
+.mute-button {
+  width: 29px;
+  background-color: white;
+  border-radius: 50%;
+}

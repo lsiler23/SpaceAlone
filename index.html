@@ -34,10 +34,12 @@
             Click here to start
           </div>
         </div>
+        <img class='mute-button' src="./assets/mute.png" alt="">
     </div>
     <div id='all-content' class='closed'>
       <div class='side-bar'>
         <h1>SpaceAlone</h1>
+        <img class='mute-button' src="./assets/mute.png" alt="">
         <div class='header'>
           <div class='counters'>
             <div id='moves' class='counter fine'></div>
@@ -178,6 +180,12 @@
         </div>
       </div>
     </div>
+    <audio class='music' autoplay loop volume='0.2' muted='true'>
+      <source src="./assets/ambient2.mp3" type="audio/mp3">
+    </audio>
+    <audio class='music' autoplay loop muted='true'>
+      <source src="./assets/drone.mp3" type="audio/mp3">
+    </audio>
     <script type='text/javascript' src='lib/bundle.js'></script>
   </body>
 </html>
