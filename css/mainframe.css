@@ -36,7 +36,7 @@ h1 {
 .main-frame {
   height: 500px;
   width: 700px;
-  margin: 11% auto;
+  margin: 8% auto;
 }
 
 .alert-view {
@@ -95,8 +95,17 @@ h1 {
   cursor: pointer;
 }
 
+.head-section {
+  display: flex;
+  justify-content: space-between;
+}
+
 .mute-button {
   width: 29px;
+  height: 29px;
+  padding: 10px;
+  margin-top: 17px;
+  margin-right: 16px;
   background-color: white;
   border-radius: 50%;
 }
