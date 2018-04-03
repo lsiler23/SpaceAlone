@@ -3,108 +3,77 @@
 ## Background
 
 Race against the clock to keep your spaceship from burning in SpaceAlone!
-You'll have 60 seconds to complete 60 crucial tasks based on your control board and the alerts your ship sends.
+Pick whichever level is most comfortable for you, or not. You'll have 60 seconds to complete the specified number of crucial tasks per level on your control board based on the alerts your ship sends.
 
-## MVPs
-* Counters
-  - Timer
-  - Correct moves
-* Alerts
-* Controls
-  - 4 classes broken into two functionality-based modules:
-      - Togglers: (a) buttons (on/off), (b) togglers (more than 2 options)
-      - Sliders: (a) dials (circular), (b) sliders (horizontal drag)
-* Spaceship view
-* Special events
-  - Wormhole!
-    - At a random timeout (1-30 seconds into gameplay), the screen will be overtaken by a modal for 5 seconds only escapable by hitting up and down arrows. If the player doesn't hit the keys 30 times each, the game is automatically over.
-* Production README
+[Click here](https://lsiler23.github.io/SpaceAlone/) to play!
 
-### Bonus
+## Technologies Used
+* JavaScript
+* HTML/CSS
+
+## How to Play
+
+* Choose a level on the second opening screen, then click to start
+* Check the alert provided by your ship and follow through with the instruction - this may take some practice, since, depending on your level, the commands may move quickly
+* Once a task disappears, a follow-through won't be counted towards your points
+* If you're able to complete the minimum number of tasks designated by your level, you win.
+* Want to try again? Click the 'Play Again?' button that will appear at the end of each game.
+
+## Implementation
+
+### Difficulty Levels
+
+In order to allow for a customizable level of difficulty, I created a system in which the class of a given level is saved from the second modal screen and shared with the main game render class. Each level corresponds to a time interval dependent on how many minimum tasks are required in 60 seconds. For example, level 1 has a minimum of 10 tasks, so the player will be prompted every 6 seconds with a new alert if they don't solve a task sooner (more on this in the next bullet).
+
+In the class associated with the modal screen, you'll find the following in the constructor and playGame functions, respectively:
+
+```Javascript
+  this.levelOptions = {
+    'level1': {seconds: 6000, tasks: 10},
+    'level2': {seconds: 3000, tasks: 20},
+    'level3': {seconds: 2000, tasks: 30},
+    'level4': {seconds: 1500, tasks: 40}
+  }
+```
+```Javascript
+  const chosenLevel = document.querySelector('.chosen');
+  const currentLevel = this.levelOptions[`${chosenLevel.id}`]
+  this.currentGame = new GameRender(currentLevel);
+```
+
+### Checking for Accuracy
+
+In order to ensure that the player is following through with each task correctly, I opted to turn on event listeners per individual control and shut them off each time the interval updates to a new task, instead of maintaining event listeners on every control. I chose to accomplish the communication between the creation of the alerts and the controls themselves because of the ease of debugging. It's much better to be able to focus on the event cycle of one control at a time, instead of handle any interference with other event listeners.
+
+The cycle is processed as follows:
+
+1. The game chooses an alert based on logical availability. For example, if a button is successfully turned off, the player shouldn't be asked to turn it off again without turning it on. I accomplished this smart-choosing feature by keeping a small cache of the completed task options and setting up a loop to search potential tasks until an available option is found.
+
+In the constructor of the game's render class:
+
+```Javascript
+this.alertHistory = {
+  hyperspeed: '',
+  percolator: 'off',
+  kazoomosphere: '1',
+  oven: 'off',
+  stress: '1',
+  gorgonzola: '',
+  letme: 'out',
+  cosmicslop: 'asanorganicfacemask',
+  zaboomafoominator: '',
+  nightmaregauge: '1'
+}
+```
+
+### Responsiveness
+
+Again, the chosen difficulty level reflects only the bare minimum tasks required to win the game. If the player responds correctly to a task earlier than the level's set time interval, they'll be automatically prompted with an extra task.
+
+
+
+## Future Features
   * Effects
       - Oozing slime
       - Increasing fire dependent on ratio of missed moves to seconds
   * High scores
-
-## Technologies
-  * JavaScript
-  * HTML/CSS
-  * Canvas
-
-## Implementation Timeline
-
-### Phase I
-#### Wednesday, March 21 EOD
-  * Build main frame
-    - Body:
-      - Spaceship display area
-      - Alert area
-      - Controls
-        - Grid/board
-  * Build alert logic
-    - Initialize with object containing the following control information:
-    ```javascript
-    {
-      1: {
-        class: 'button',
-        name: 'percolator',
-        language: 'Turn the percolator ',
-        options: ['on', 'off']
-      },
-      2: {
-        class: 'slider',
-        name: 'kazoomosphere',
-        language: 'Shift the kazoomosphere to level ',
-        options: ['1', '2', '3']
-      }
-    }
-    ```
-    - Build setTimeout for choosing a random alert every second
-    - Display random alerts in view
-  * Build a button control
-    - Initialize with name, language, and options
-    - Create functionality module for a simple on/off toggle
-
-#### Thursday, March 22 EOD
-  * Build game entry point
-    - Render button and toggle
-  * Build game class
-    - Connect the directional to the result of the event listener on the button
-    - Create correct moves counter
- * Update main frame
-    - Header:
-      - Render correct moves counter
-      - Render timer
-      - Ensure a correct move results in a count up
-
-### Phase II
-#### Friday, March 23 EOD
-  * Update game class
-    - Winning logic
-    - Create time checks
-      - At 10 seconds, should be 10 points on the moves counter, etc.
-      - Red flash display if behind
-  * Build a slider control
-    - Initialize with name, language, and options
-    - Create functionality module for a drag event listener that updates class
-
-#### Saturday, March 24 EOD
-  * Populate board with one button and one slide
-    - Ensure correct functionality
-  * Build a toggler
-    - Follow pattern of previous button
-  * Add togglers to the board
-  * Style the board pieces
-  * Style the spaceship
-  * Create background
-
-### Phase III
-#### Sunday, March 25 EOD
-  * Build wormhole class
-    - Create counter on hits per up and down keys, respectively
-    - Create passing logic
-  * Update game class
-    - Add randomized timeout for wormhole launch, populates a modal
-    - Update losing logic to include the result of the wormhole
-  * Style wormhole modal
-  * Attempt the dial
