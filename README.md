@@ -21,7 +21,7 @@ Pick whichever level is most comfortable for you, or not. You'll have 60 seconds
 
 ## Demo
 
-![demo-gif](demo.gif)
+![demo-gif](assets/demo.gif)
 
 ## Implementation
 
