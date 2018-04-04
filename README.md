@@ -19,6 +19,10 @@ Pick whichever level is most comfortable for you, or not. You'll have 60 seconds
 * If you're able to complete the minimum number of tasks designated by your level, you win.
 * Want to try again? Click the 'Play Again?' button that will appear at the end of each game.
 
+## Demo
+
+![demo-gif]('./assets/demo.gif')
+
 ## Implementation
 
 ### Difficulty Levels
@@ -47,7 +51,7 @@ In order to ensure that the player is following through with each task correctly
 
 The cycle is processed as follows:
 
-1. The game chooses an alert based on logical availability. For example, if a button is successfully turned off, the player shouldn't be asked to turn it off again without turning it on. I accomplished this smart-choosing feature by keeping a small cache of the completed task options and setting up a loop to search potential tasks until an available option is found.
+1. The game chooses an alert based on logical availability. For example, if a button is successfully turned off, the player shouldn't be asked to turn it off again without turning it on. I accomplished this by keeping a small cache of the completed task options and setting up a loop to search potential tasks until an available option is found.
 
 In the constructor of the game's render class:
 
@@ -65,13 +69,40 @@ this.alertHistory = {
   nightmaregauge: '1'
 }
 ```
+On an interval, or when a correct response occurs:
+
+```Javascript
+while (currentAlert[0].currentOption === this.alertHistory[`${currentAlert[0].name}`]) {
+  currentAlert = newAlert.renderDirection();
+}
+```
+
+2. Once an available option is found, the game will display the alert and an event listener will activate for only that control. There are three methods checking for accuracy on a move involving a dial, button, or slider. Each contains a reference to the following method at the time of a correct move:
+
+```Javascript
+reactToCorrect(name, currentOption) {
+  this.points += 1;
+  this.alertHistory[`${name}`] = currentOption;
+  this.correctMove = true;
+  this.handleTimeouts();
+  this.renderPoints();
+}
+```
 
 ### Responsiveness
+As mentioned in the previous section, if the player responds correctly to a task earlier than the level's set time interval, they'll be automatically prompted with an extra task. This was a bit tricky to maneuver because of the time interval. My solution was to clear the interval on a correct move and reset it.
 
-Again, the chosen difficulty level reflects only the bare minimum tasks required to win the game. If the player responds correctly to a task earlier than the level's set time interval, they'll be automatically prompted with an extra task.
+```JavaScript
+handleTimeouts() {
+  if (this.correctMove || this.timer.timeCount <= 0) {
+    clearInterval(this.playGameInterval);
+    this.playGameInterval = null;
+    this.correctMove = false;
+  }
 
-
-
+  this.createInterval();
+}
+```
 ## Future Features
   * Effects
       - Oozing slime
